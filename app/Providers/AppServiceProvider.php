@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/*  Added lines 8 and 29 to solve Key Length Error in artisan migrate    */
+use Illuminate\Support\Facades\Schema;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
     }
 }
