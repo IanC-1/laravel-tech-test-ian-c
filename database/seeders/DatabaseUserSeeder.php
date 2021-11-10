@@ -17,7 +17,7 @@ class DatabaseUserSeeder extends Seeder
         User::updateOrCreate(['id' => 1], [
             'name' => 'admin',
             'email' => 'admin@admin.com',
-            'password' => '$2y$10$EE0dFeHOO8tnDper/UNa0.EYUqEkZ/2XLtiJwD/eqqRtkeKQzHbV6' // hash=password
+            'password' => '$2y$10$EE0dFeHOO8tnDper/UNa0.EYUqEkZ/2XLtiJwD/eqqRtkeKQzHbV6' // hash = password
         ]);
     }
 }
