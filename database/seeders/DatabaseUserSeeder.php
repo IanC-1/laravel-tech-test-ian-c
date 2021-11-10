@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseUserSeeder extends Seeder
@@ -13,10 +14,10 @@ class DatabaseUserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        User::updateOrCreate(['id' => 1], [
             'name' => 'admin',
             'email' => 'admin@admin.com',
-            'password' => Hash::make('password')
+            'password' => '$2y$10$EE0dFeHOO8tnDper/UNa0.EYUqEkZ/2XLtiJwD/eqqRtkeKQzHbV6' // hash=password
         ]);
     }
 }
