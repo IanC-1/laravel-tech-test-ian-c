@@ -27,6 +27,7 @@
                     <img src="purpleFlashLogo.png" width="50%" />
                     {{ config('Purple Flash Promotions') }}
                 </a>
+                <h1>Purple Flash Promotions</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
