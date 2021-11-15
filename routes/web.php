@@ -17,10 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+Route::post('companiesForm', 'CompanyController@index')->name('companiesForm');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('employeesForm', 'EmployeeController@index')->name('employeesForm');
+
+Route::resource('companies', 'CompanyController');
+
+Route::resource('employees', 'EmployeeController');
