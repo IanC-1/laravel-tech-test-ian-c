@@ -32,11 +32,6 @@
     </div>
 
     <div class="form-group">
-        {{Form::label('last_name', 'Last Name')}}
-        {{Form::text('last_name', '', ['class' => 'form-control'])}}
-    </div>
-
-    <div class="form-group">
         {{Form::label('email', 'E-Mail Address')}}
         {{Form::text('email', '', ['class' => 'form-control'])}}
     </div>

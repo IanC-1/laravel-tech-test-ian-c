@@ -4,7 +4,7 @@
 
 @section('content')
     <h1 class="display-6">Companies</h1>
-    <a href="{{route('companies.create')}}">Create New Company</a>
+    <a href="{{route('companies.create')}}">Create A New Company</a>
     <hr/>
 
 

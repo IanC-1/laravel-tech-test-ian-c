@@ -27,10 +27,10 @@ class EmployeeController extends Controller
     {
         $this->validate($request, [
             'first_name' => 'required',
-            'first_name' => 'required',
+            'last_name' => 'required',
             'company_id' => 'alpha-num',
             'email' => 'email',
-            'phone' => 'alpha-num'
+            'phone' => 'string'
         ]);
         $input = $request->all();
         Employee::create($input);

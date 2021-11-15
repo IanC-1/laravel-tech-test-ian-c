@@ -3,7 +3,7 @@
 @section('pageTitle', 'Create An Employee')
 
 @section('content')
-    <h1 class="display-6">Create New Employee</h1>
+    <h1 class="display-6">Create A New Employee</h1>
 
     <hr/>
 

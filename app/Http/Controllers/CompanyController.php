@@ -34,7 +34,7 @@ class CompanyController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'email',
-            'logo' => 'image',
+            'logo' => 'string',
             'website' => 'url',
         ]);
 
