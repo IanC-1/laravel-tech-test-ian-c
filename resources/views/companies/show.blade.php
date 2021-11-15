@@ -9,7 +9,7 @@
 
     <dl>
         <dt>Name</dt>
-        <dd>{{$company->first_name}}</dd>
+        <dd>{{$company->name}}</dd>
 
         <dt>Email</dt>
         <dd>{{$company->email}}</dd>
@@ -30,4 +30,5 @@
             <button class="btn btn-danger m-1">Delete Company</button>
         </form>
     </div>
+
 @endsection
