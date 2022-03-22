@@ -1,1 +1,1 @@
-Basic CRM for Tritility
+Basic Laravel CRM Example
